@@ -2332,10 +2332,10 @@ struct Miner
     {
         unsigned char randomSeed[32];
         memset(randomSeed, 0, sizeof(randomSeed));
-        randomSeed[0] = 12;
-        randomSeed[1] = 137;
-        randomSeed[2] = 176;
-        randomSeed[3] = 54;
+        randomSeed[0] = 117;
+        randomSeed[1] = 1;
+        randomSeed[2] = 103;
+        randomSeed[3] = 69;
         randomSeed[4] = 136;
         randomSeed[5] = 69;
         randomSeed[6] = 43;
