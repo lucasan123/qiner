@@ -10,7 +10,7 @@ out of or in connection with the software or the use or other dealings in the so
 #define AVX512 0
 #define PORT 21841
 #define VERSION_A 1
-#define VERSION_B 140
+#define VERSION_B 0
 #define VERSION_C 0
 
 #if defined(_WIN32) || defined(_WIN64)
