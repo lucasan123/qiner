@@ -2323,7 +2323,7 @@ typedef struct
 struct Miner
 {
     #define NUMBER_OF_NEURONS 4194304
-    #define SOLUTION_THRESHOLD 20
+    #define SOLUTION_THRESHOLD 22
 
     unsigned long long miningData[1024];
     unsigned char computorPublicKey[32];
@@ -2332,10 +2332,10 @@ struct Miner
     {
         unsigned char randomSeed[32];
         memset(randomSeed, 0, sizeof(randomSeed));
-        randomSeed[0] = 117;
-        randomSeed[1] = 1;
-        randomSeed[2] = 103;
-        randomSeed[3] = 69;
+        randomSeed[0] = 1;
+        randomSeed[1] = 0;
+        randomSeed[2] = 233;
+        randomSeed[3] = 9;
         randomSeed[4] = 136;
         randomSeed[5] = 69;
         randomSeed[6] = 43;
