@@ -2326,7 +2326,7 @@ struct Miner
     #define NUMBER_OF_OUTPUT_NEURONS 640
     #define MAX_INPUT_DURATION 10
     #define MAX_OUTPUT_DURATION 10
-    #define SOLUTION_THRESHOLD 600
+    #define SOLUTION_THRESHOLD 575
 
     unsigned long long data[DATA_LENGTH / 64];
     unsigned char computorPublicKey[32];
@@ -2335,14 +2335,14 @@ struct Miner
     {
         unsigned char randomSeed[32];
         memset(randomSeed, 0, sizeof(randomSeed));
-        randomSeed[0] = 0;
-        randomSeed[1] = 0;
-        randomSeed[2] = 0;
-        randomSeed[3] = 0;
-        randomSeed[4] = 0;
+        randomSeed[0] = 155;
+        randomSeed[1] = 99;
+        randomSeed[2] = 37;
+        randomSeed[3] = 69;
+        randomSeed[4] = 255;
         randomSeed[5] = 0;
-        randomSeed[6] = 0;
-        randomSeed[7] = 0;
+        randomSeed[6] = 73;
+        randomSeed[7] = 77;
         random(randomSeed, randomSeed, (unsigned char*)data, sizeof(data));
 
         memset(computorPublicKey, 0, sizeof(computorPublicKey));
