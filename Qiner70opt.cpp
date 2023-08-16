@@ -2326,7 +2326,7 @@ struct Miner
     #define NUMBER_OF_OUTPUT_NEURONS 640
     #define MAX_INPUT_DURATION 10
     #define MAX_OUTPUT_DURATION 10
-    #define SOLUTION_THRESHOLD 575
+    #define SOLUTION_THRESHOLD 590
 
     unsigned long long data[DATA_LENGTH / 64];
     unsigned char computorPublicKey[32];
