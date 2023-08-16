@@ -9,7 +9,7 @@ out of or in connection with the software or the use or other dealings in the so
 
 #define AVX512 0
 #define PORT 21841
-#define EPOCH 0
+#define EPOCH 70
 
 #if defined(_WIN32) || defined(_WIN64)
 #include <intrin.h>
