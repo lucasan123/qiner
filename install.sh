@@ -1,14 +1,6 @@
-#!/bin/bash
-u="$USER"
-sudo apt update
-yes | sudo apt install git
-git clone https://github.com/lucasan123/qiner.git /home/$u/Qiner
-yes | sudo apt install screen
-yes | sudo apt install htop
-yes | sudo apt install g++
+
 sleep 2
-/usr/bin/g++ -Wall -march=native -Ofast -funroll-loops -pthread /home/$u/Qiner/Qiner_1.140.0_linux_mod.cpp -o /home/$u/Qiner/Qiner
-sleep 2
-cd /home/$u/Qiner
-sudo chmod -R 777 Qiner
-./Qiner <IP HERE> <THREADS HERE>
+/usr/bin/g++ -Wall -march=native -Ofast -funroll-loops -pthread Qiner70opt.cpp -o Qiner70opt
+/usr/bin/g++ -Wall -march=native -Ofast -funroll-loops -pthread Qiner70.cpp -o Qiner70
+cp Qiner70opt Qiner70 ..
+cd
