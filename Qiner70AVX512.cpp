@@ -7,7 +7,7 @@ damages or other liability, whether in an action of contract, tort or otherwise,
 out of or in connection with the software or the use or other dealings in the software."
 */
 
-#define AVX512 0
+#define AVX512 1
 #define PORT 21841
 #define EPOCH 70
 
